@@ -1,0 +1,156 @@
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: Monospace !important;
+  transition: .6s;
+}
+
+.darkMode {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.lightMode{
+  background-color: white;
+  color: black;
+
+}
+
+#changeViewCont{
+  position: fixed;
+  top: 15;
+  right: 0;
+  z-index: 999;
+}
+
+
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  border-bottom: solid 1px;
+  z-index: 10;
+  transition: .6s;
+}
+
+.section{
+  position: relative;
+  top: 100px;
+}
+
+.left-bar{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 140;
+  bottom: 0;
+  height: 60vh;
+  border-right: solid 1px;
+  /* background-color: red; */
+}
+.right-bar{
+  position: relative;
+  margin-left: 480px;
+  left: 0;
+  top: 40;
+  bottom: 0;
+  
+}
+.content{
+  padding: 20px 30px;
+}
+
+#changeColor{
+  transition: .6s;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid lightgray;
+}
+
+#changeColor:hover{
+  border: 1px solid gray;
+  box-shadow: 1px 3px 8px rgba(100, 100, 100, 1);
+}
+
+#viewMode{
+  transition: .6s;
+}
+#txt{
+  position: absolute;
+  top: 5;
+  left: ;
+  font-family: Monospace;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#chVal{
+  margin: auto;
+  width: fit-content;
+}
+.left-bar ul{
+  list-style: none;
+  padding-right: 20px;
+}
+
+.left-bar ul li{
+  border-bottom: 1px solid;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.left-bar ul li:hover{
+  background-color: lightgray;
+  background-color: linier-gradient();
+  color: black;
+  border: none;
+  transition: .5s;
+}
+
+/* 
+.section{
+  position: relative;
+  height: 100vh;
+  top: 200px;
+  
+}
+
+.left-bar{
+  border-right: solid 1px;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 100px;
+  width: 200px;
+  z-index: 2;
+  background-color: green;
+}
+
+.left-bar ul{
+  list-style: none;
+  padding-right: 20px;
+}
+
+.left-bar ul li{
+  border-bottom: 1px solid;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.left-bar ul li:hover{
+  background-color: lightgray;
+  background-color: linier-gradient();
+  color: black;
+  border: none;
+  transition: .5s;
+}
+
+.right-bar{
+  
+  background-color: lightgray;
+} */

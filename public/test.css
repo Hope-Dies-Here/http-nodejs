@@ -1,0 +1,238 @@
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: Monospace !important;
+  transition: .6s;
+}
+
+.darkMode {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.lightMode{
+  background-color: white;
+  color: black;
+
+}
+
+#changeViewCont{
+  position: fixed;
+  top: 15;
+  right: 0;
+  z-index: 999;
+}
+
+#changeColor{
+  transition: .6s;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid lightgray;
+}
+
+#changeColor:hover{
+  border: 1px solid gray;
+  box-shadow: 1px 3px 8px rgba(100, 100, 100, 1);
+}
+
+#viewMode{
+  transition: .6s;
+}
+#txt{
+  /* position: absolute; */
+  top: 5;
+  left: ;
+  font-family: Monospace;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#chVal{
+  margin: auto;
+  width: fit-content;
+
+}
+.content{
+  display: none;
+  position: absolute;
+}
+#pjage{
+  position: absolute;
+}
+
+/*------------------------------##########*/
+.nav{
+  background-color: ;
+  transition: .6s;
+  border-bottom: 1px solid;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, .2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px 0;
+}
+li{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+ul img{
+  stroke: 27px;
+}
+
+.section{
+  position: relative;
+  top: 100px;
+}
+
+
+
+.left-bar{
+  /* background-color: green; */
+  position: relative;
+}
+
+.fixed-left{
+  height: 75vh;
+  position: fixed;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+ margin-top: 20px;
+  /*justify-content: center;*/
+}
+
+.left-bar ul{
+  border-right: solid 1px;
+  border-radius: 8px;
+  list-style: none;
+ padding-right: 50px; 
+}
+
+.left-bar ul li{
+  border-bottom: 1px solid;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 30px 0 5px 15px;
+  /* padding-left: 20px; */
+}
+
+.left-bar ul li:hover{
+  background-color: lightgray;
+  background-color: linier-gradient();
+  color: black;
+  border: none;
+  opacity: .6;
+  transition: .5s;
+}
+
+.right-bar{
+  position: relative;
+  top: 50;
+}
+
+.content:first-child{
+  display: block;
+}
+
+.theCards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 800px;
+  
+}
+
+.section .oo img{
+  margin: auto;
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.section .oo{
+  border: 1px solid;
+  border-radius: 6px;
+  background-color: none!important;
+  width: 35rem;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 60px;
+}
+
+.oo img{
+}
+
+.theGroup{
+  width: 30rem;
+  margin: auto;
+  border: 1px solid;
+  padding: 20px 25px;
+}
+
+.content{
+  padding-bottom: 100px;
+}
+
+.luckTxt{
+  height: 80px;
+}
+.luckTxt span{
+  font-size: 14px;
+}
+.options{
+  /* background-color: red; */
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  align-items: center;
+}
+
+#guessForm{
+  htransform: translateY(20px);
+  padding-top: 20px;
+  border-top: 1px solid;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  width: 250px;
+}
+
+#guessGame{
+  width: 50rem;
+  padding-left: 50px!important;
+}
+
+#guessGame, #guessGame button, input, span{
+  font-size: 24px;
+}
+
+#myGuess{
+  width: 130px!important;
+  font-size: 24px;
+}
+
+#guessBtn img{
+  width: 20px;
+}
+
+@media only screen and (max-width: 1290px) {
+  .nav, section, footer{
+    /* background-color: red; */
+    display: none!important;
+  }
+  body{
+    background-image: url('./img/kakashi.jpg');
+    background-size: 82px;
+  }
+}
+
