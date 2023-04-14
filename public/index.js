@@ -3,7 +3,7 @@ $(document).ready(() => {
   $("#eve").text("You wanna buy human bones");
   setTimeout(() => {
     $("#eve").text("nevermind");
-  }, 600);
+  }, 1000);
 
   $("#sike").click(() => {
     $(".alert").slideDown("fast");
