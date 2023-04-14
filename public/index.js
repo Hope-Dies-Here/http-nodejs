@@ -86,10 +86,10 @@ $(document).ready(() => {
         dat = letters[Math.floor(Math.random() * 5)];
         $("#dispTheLett").text(dat);
 
-        if (i >= 10) clearInterval(inter);
+        if (i >= 30) clearInterval(inter);
 
         i = i + 1 / 2;
-      }, 50);
+      }, 30);
 
       setTimeout(() => {
         $("#dispTheLett").text(svGuess);
@@ -118,7 +118,7 @@ $(document).ready(() => {
           $("#myCoin").text(coin);
         }
         $("#guessBtn").fadeIn();
-      }, 1100);
+      }, 1850);
     });
   });
 

@@ -26,7 +26,6 @@ app.get('/', (req, res) => {
     odd : oddInit
     
   })
-  console.log(oddInit)
 })
 
 // Guess Post
@@ -41,7 +40,6 @@ app.post('/guess', (req, res) => {
     
   }, 50)
   res.json({letter: bingo, coin: coin})
-  console.log(bingo)
 })
 
 app.listen(PORT, console.log(`server servered at ${PORT}`))
